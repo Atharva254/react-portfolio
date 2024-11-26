@@ -1,0 +1,13 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.separator-line {
+    height: 1px;
+    background: #ccc;
+    color: #a51313;
+}
+
+.separator {
+    padding: 10px;
+}

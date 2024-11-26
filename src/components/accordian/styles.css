@@ -1,0 +1,43 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.item {
+    background: #747bff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.title {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    color: white;
+    height: auto;
+}
+
+.wrapper button {
+    background: #d56934;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}
