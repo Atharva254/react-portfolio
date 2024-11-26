@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {data} from "../../data/AccordionData.ts";
+import {data} from "./AccordionData.ts";
 import './styles.css'
 
 function Accordion() {
@@ -49,6 +49,10 @@ function Accordion() {
         }
     }
 
+    function isLink(answer: string) {
+        return answer.startsWith("http")
+    }
+
     return (
         <div className="wrapper">
             <button key='multiSelectionButton' onClick={toggleMultiSelection}
@@ -66,7 +70,8 @@ function Accordion() {
                             </div>
                             {
                                 renderAnswer(item.id) ?
-                                    <div key={'answer' + item.id} className={'content'}>{item.answer}</div> : null
+                                    isLink(item.answer) ? <a href={item.answer}>{item.answer}</a> :
+                                        <div key={'answer' + item.id} className={'content'}>{item.answer}</div> : null
                             }
                         </div>)
                         : <div>No item found</div>

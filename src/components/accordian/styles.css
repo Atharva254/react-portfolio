@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+.accordion a {
+    color: white;
+    text-decoration: underline;
+}
+
 .accordion {
     display: flex;
     flex-direction: column;
