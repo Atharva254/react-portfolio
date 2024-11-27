@@ -1,15 +1,20 @@
 import './styles.css'
+import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className="navbar">
-            <h1>Portfolio</h1>
+            <Link to={"/"}><h1>Portfolio</h1></Link>
             <ul>
                 <li>
-                    <a href="/">Accordion</a>
+                    <Link to={
+                        "/accordion"
+                    }>Accordion</Link>
                 </li>
                 <li>
-                    <a href="/">Random color generator</a>
+                    <Link to={
+                        "/rcg"
+                    }>Random color generator</Link>
                 </li>
             </ul>
         </nav>
